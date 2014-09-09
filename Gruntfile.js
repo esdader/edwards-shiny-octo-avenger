@@ -1,27 +1,21 @@
 module.exports = function (grunt) {
-
     grunt.initConfig({
-
         pkg: grunt.file.readJSON('package.json'),
-        
         concat: {
             dist: {
                 src: [
                     'js/plugins.js',
                     'js/main.js'
                 ],
-
                 dest: 'build/js/production.js'
             }
         },
-        
         uglify: {
             build: {
                 src  : 'build/js/production.js',
                 dest : 'build/js/production.min.js'
             }
         },
-        
         sass: {
             dev: {
                 options: {
@@ -40,7 +34,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
         autoprefixer: {
             options: {
                 browsers: ['last 2 versions', 'ie 8', 'ie 9']
@@ -50,11 +43,10 @@ module.exports = function (grunt) {
                 dest: 'css/main.css'
             }
         },
-
         watch: {
             css: {
                 files: 'sass/**/*.scss',
-                tasks: ['sass:dev', 'autoprefixer'],
+                tasks: ['sass:dev', 'autoprefixer']
             }
         }
     });
