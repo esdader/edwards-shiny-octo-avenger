@@ -7,7 +7,6 @@ module.exports = function (grunt) {
         concat: {
             dist: {
                 src: [
-                    'js/vendor/jquery-1.11.1.min.js',
                     'js/plugins.js',
                     'js/main.js'
                 ],
@@ -32,7 +31,7 @@ module.exports = function (grunt) {
                     'css/main.css' : 'sass/main.scss'
                 }
             },
-            dist: {
+            production: {
                 options: {
                     style: 'compressed'
                 },
@@ -53,13 +52,6 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            scripts: {
-                files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
-                options: {
-                    spawn: false
-                }
-            },
             css: {
                 files: 'sass/**/*.scss',
                 tasks: ['sass:dev', 'autoprefixer'],
