@@ -5,6 +5,12 @@
  */
 
 function starter_theme_scripts() {
+
+	// google fonts
+	// wp_enqueue_style( 
+	// 	'google_fonts',
+	// 	'http://fonts.googleapis.com/css?family=Fredoka+One'
+	// );
 	
 	// main stylesheet
 	wp_enqueue_style( 
@@ -95,5 +101,19 @@ if ( function_exists( 'add_theme_support' ) ) {
 // 	add_image_size( 'homepage-thumb', 220, 180, true ); //(cropped)
 // }
 
+/**
+ * Add custom post types
+ */
+
+// Attorneys
+require_once('post-types/abogados.php');
+require_once('post-types/areas-de-practica.php');
+require_once('post-types/attorneys.php');
+require_once('post-types/blog.php');
+require_once('post-types/case-results.php');
+require_once('post-types/opiniones.php');
+require_once('post-types/practice-areas.php');
+require_once('post-types/resultados-de-casos.php');
+require_once('post-types/reviews.php');
 
 ?>
