@@ -10,10 +10,31 @@
  * colors
  */
 
+$blue: #004e72;
+$light-blue: #d9e5ea;
+$white: #fff;
+$red: #ab192d;
+$beige: #e7e7d2;
+$gray: #6d6e71;
+$orange: #f28b00;
+$body-color: $gray;
+$main-font-folor: $gray;
 
 /**
  * fonts 
  */
+
+$headline-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+$headline-weight: 400;
+
+$body-family: Georgia, Times, "Times New Roman", serif;
+$body-weight: 400;
+
+body {
+	font-family: $body-family;
+	font-weight: $body-weight;
+}
+
 
 /**
  * Some defautls
