@@ -1,0 +1,73 @@
+/**
+ * Header
+ */
+
+ .header-phone {
+ 	display: inline-block;
+ 	vertical-align: bottom;
+ 	margin-bottom: -2px;
+ 	margin-left: per(130);
+	font-size: em(24);
+	line-height: 1;
+	color: $white;
+	font-family: $header-family;
+
+ 	a {
+ 		font-family: $header-family;
+ 		color: $white;
+ 		text-decoration: none;
+ 		font-size: 1em;
+ 		line-height: 1;
+ 	}
+ }
+
+ .icon-header-contact {
+ 	display: inline-block;
+ 	vertical-align: bottom;
+ 	width: 36px;
+ 	height: 28px;
+ 	margin-left: per(40);
+ 	background: url(../img/s.png) no-repeat 0 -90px;
+ }
+
+ .header-social-media-links {
+ 	float: right;
+ 	padding-top: em(11);
+ }
+
+ .header-social-media-list {
+ 	width: (36 * 3 + 16) * 1px;
+	li {
+		margin-right: per(8, 124);
+	}
+
+	li:last-child {
+		margin-right: 0;
+	}	
+}
+
+ .header-social-media-link {
+ 	display: block;
+ 	width: 36px;
+ 	height: 36px;
+ 	background-image: url(../img/s.svg);
+	background-repeat: no-repeat;
+
+ 	.no-svg & {
+ 		background-image: url(../img/s.png);
+
+ 	}
+ 	
+ }
+
+ .header-facebook {
+ 	background-position: 0 0;
+ }
+
+ .header-twitter {
+ 	background-position: -40px 0;
+ }
+
+ .header-googleplus {
+ 	background-position: -80px 0;
+ }

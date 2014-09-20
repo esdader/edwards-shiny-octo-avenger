@@ -116,4 +116,34 @@ require_once('post-types/practice-areas.php');
 require_once('post-types/resultados-de-casos.php');
 require_once('post-types/reviews.php');
 
+
+/**
+ * Adding options page
+ */
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Edwards Law Firm Contact Information',
+		'menu_title'	=> 'Contact Information',
+		'menu_slug' 	=> 'contact-information',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Theme Footer Settings',
+	// 	'menu_title'	=> 'Footer',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
+	
+}
+
+
+// some helper functions
+function strip_dashes_from_number ( $phone_number ) {
+	$strip = array('(', ')', ' ', '-');
+	return str_replace($strip, '', $phone_number);
+}
+
 ?>

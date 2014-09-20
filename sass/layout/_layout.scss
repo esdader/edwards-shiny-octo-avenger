@@ -1,11 +1,36 @@
+/**
+ * helpers
+ */
+.l-horizontal-list	{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	li {
+		float: left;
+	}
+}
+
+
 /*
  * Main layout
 */
 
 .l-outer {
-
+	width: 100%;
 }
 
-.l-innner {
-
+.l-inner {
+	max-width: $max-px-width;
+	margin: 0 auto;
 }
+
+// header
+
+.l-main-header-outer {
+	background-color: $blue;
+}
+
+.l-main-header {
+	padding: em(27) per(34) em(20) per(32);
+}	

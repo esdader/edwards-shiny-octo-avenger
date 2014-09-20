@@ -6,6 +6,9 @@
  * Dimensions
  */
 
+$max-width: 1200;
+$max-px-width: 1200px;
+
 
 /**
  * functions
@@ -41,6 +44,7 @@ $main-font-folor: $gray;
  */
 
 $headline-family: 'Fredoka One', Arial, Helvetica, sans-serif;
+$header-family: $headline-family;
 $headline-weight: 400;
 
 $body-family: Georgia, Times, "Times New Roman", serif;

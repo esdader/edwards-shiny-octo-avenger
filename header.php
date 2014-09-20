@@ -27,3 +27,27 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<div class="l-outer l-main-header-outer">
+	<header class="l-main-header l-inner">
+		<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('template_directory'); ?>/img/logo.png'" alt="The Edwards Law Firm"></a>
+		<?php 
+			$phone     = get_field('phone', 'option');
+			$toll_free = get_field('toll_free_number', 'option');
+		?>
+		<div class="header-phone"><a href="tel:<?php echo strip_dashes_from_number($phone); ?>"><?php echo $phone; ?></a> / <a href="tel:<?php echo strip_dashes_from_number($toll_free); ?>"><?php echo $toll_free; ?></a></div>
+		<a href="#add-link" class="icon-header-contact ir">Contact</a>
+		<div class="header-social-media-links">
+			<ul class="l-horizontal-list header-social-media-list">
+				<li>
+					<a href="<?php the_field('facebook', 'option'); ?>" class="header-social-media-link header-facebook ir">Facebook</a>
+				</li>
+				<li>
+					<a href="<?php the_field('twitter', 'option'); ?>" class="header-social-media-link header-twitter ir">Twitter</a>
+				</li>
+				<li>
+					<a href="<?php the_field('google+', 'option'); ?>" class="header-social-media-link google-plus ir">Google+</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+</div>
