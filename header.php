@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="l-outer l-main-header-outer">
-	<header class="l-main-header l-inner">
+	<header class="l-main-header l-inner" role="banner">
 		<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('template_directory'); ?>/img/logo.png'" alt="The Edwards Law Firm"></a>
 		<?php 
 			$phone     = get_field('phone', 'option');
