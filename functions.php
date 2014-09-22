@@ -74,7 +74,11 @@ function register_starter_theme_menus() {
 	register_nav_menus(
 		array(
 			'header-menu' => __( 'Header Menu' ),
-			'extra-menu' => __( 'Extra Menu' )
+			'left-footer-menu' => __( 'Left Footer Menu' ),
+			'right-footer-menu' => __( 'Right Footer Menu' ),
+			'es-header-menu' => __( 'Espa&ntilde;ol Header Menu' ),
+			'es-left-footer-menu' => __( 'Espa&ntilde;ol Left Footer Menu' ),
+			'es-right-footer-menu' => __( 'Espa&ntilde;ol Right Footer Menu' )
 		)
 	);
 }

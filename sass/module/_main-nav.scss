@@ -1,0 +1,53 @@
+/**
+ * Main Nav
+ */
+.main-menu {
+	
+	li {
+		padding: em(25, 18) em(15, 18) em(10, 18);
+
+		&.menu-item-has-children {
+			padding-right: em(24, 18);
+		}
+	}
+
+	a {
+		font-family: $headline-family;
+		font-weight: 400;
+		font-size: em(18);
+		color: $blue;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+.sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 0;
+	background: $beige;
+
+	a {
+		padding: .5em 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: em(14);
+		color: $nav-item-gray;
+
+	}
+
+	li {
+		padding: .5em em(15);
+		border-top: 1px solid #ccc;
+		transition: padding-left  200ms ease-out;
+
+		&:first-child {
+			border-top: none;
+		}
+
+		&:hover {
+			padding-left: em(20);
+		}
+	}
+}

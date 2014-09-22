@@ -49,5 +49,16 @@
 				</li>
 			</ul>
 		</div>
+		<nav class="l-main-nav clearfix" role="navigation">
+			<?php 
+				$params = array(
+				    'theme_location' => 'header-menu',
+				    'container' => false,
+				    'menu_class' => 'l-horizontal-list main-menu'
+				);
+
+				wp_nav_menu($params);
+			?>
+		</nav>
 	</header>
 </div>
