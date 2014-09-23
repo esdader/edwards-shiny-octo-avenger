@@ -49,6 +49,12 @@
 				</li>
 			</ul>
 		</div>
+		<div class="l-language-toggle">
+			<p>
+				<a href="<?php echo get_site_url(); ?>">English</a>
+				<span class="divider"> | </span>
+				<a href="<php echo get_page_link(); ?>">Spanish</a>
+		</div>
 		<nav class="l-main-nav clearfix" role="navigation">
 			<?php 
 				$params = array(
