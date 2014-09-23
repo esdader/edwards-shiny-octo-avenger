@@ -1,0 +1,31 @@
+/**
+ * firm awards
+ */
+
+ .firm-awards-heading {
+	display: inline;
+	padding: 0 1em .25em;
+	margin-bottom: 4em;
+	text-align: center;
+	font-family: $header-family;
+	font-size: em(19);
+	line-height: 1.2;
+	color: $blue;
+	text-transform: uppercase;
+	border-bottom: 2px solid $blue;
+}
+
+.firm-awards .l-left {
+	img {
+		margin: 0 per(20);
+	}
+}
+
+.firm-awards .l-right {
+	p,
+	li,
+	blockquote {
+		font-size: em(14);
+		line-height: (20 / 14);
+	}
+}

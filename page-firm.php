@@ -28,5 +28,25 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<div class="l-firm-awards-con l-outer">
+	<div class="l-firm-awards l-inner firm-awards clearfix">
+		<div class="l-wrapper-center">
+			<h2 class="firm-awards-heading"><?php the_field('firm_awards_section_title'); ?></h2>
+		</div>
+		<div class="l-firm-awards-col l-left">
+			
+			<?php
+				$img = get_field('firm_award_image1');
+				$img2 = get_field('firm_award_image2');
+			?>
+			<p>
+				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+				<img src="<?php echo $img2['url']; ?>" alt="<?php echo $img2['alt']; ?>">
+		</div>
+		<div class="l-firm-awards-col l-right">
+			<?php the_field('firm_award_main_content'); ?>
+		</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

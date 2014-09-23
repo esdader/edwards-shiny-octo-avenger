@@ -219,3 +219,37 @@
 .l-general-content {
 	padding: em(105) per(65) 0;
 }
+
+// firm awards section
+
+.l-firm-awards-con {
+	background-color: $light-blue;
+}
+
+.l-firm-awards {
+	padding: 2em per(65) 4em;
+}
+
+
+.l-firm-awards-col {
+	float: left;
+
+	&.l-left {
+		width: per(421, 1070);
+		padding-left: per(18);
+	}
+
+	&.l-right {
+		width: per(580, 1070);
+		padding-left: per(30, 1070);
+		padding-top: 1.5em;
+	}
+}
+
+.l-wrapper-center {
+	text-align: center;
+}
+
+.l-firm-awards .l-wrapper-center {
+	margin-bottom: 4em;
+}
