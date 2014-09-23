@@ -97,6 +97,23 @@ get_header(); ?>
 		</div>
 	</section>
 </div>
+<div class="l-home-middle-section-con l-outer">
+	<div class="l-home-middle-section l-inner home-middle-section clearfix">
+		<div class="l-home-middle-section-col l-left">
+			<h3><?php the_field('home_middle_section_heading'); ?></h3>
+		</div>
+		<div class="l-home-middle-section-col l-right">
+			<?php 
+				$content = get_field('home_middle_section_content'); 
+				$link = get_field('home_middle_section_link');
+				$link_text = get_field('home_middle_section_link_text');
+
+				$content = $content . " <a href='{$link}''>{$link_text}</a>";
+			?>
+			<?php echo wpautop($content); ?>
+		</div>
+	</div>
+</div>
 <div class="l-contact-form-cta-con l-outer">
 	<div class="l-contact-form-cta l-inner clearfix">
 		<div class="l-contact-cta-col l-left contact-cta-quote">
