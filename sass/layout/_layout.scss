@@ -164,7 +164,7 @@
  */
 
 .l-cta-icons-con {
-	padding: 1.25em 0 0;
+	padding: 2em 0 0;
 	text-align: center;
 	background-color: $light-blue;
 }
@@ -213,4 +213,9 @@
 		width: per(670);
 		padding: 1em 0 1em 2em;
 	}
+}
+
+// general content
+.l-general-content {
+	padding: em(105) per(65) 0;
 }

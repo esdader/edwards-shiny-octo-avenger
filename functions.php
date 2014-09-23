@@ -162,4 +162,54 @@ function cc_mime_types( $mimes ){
 }
 add_filter( 'upload_mimes', 'cc_mime_types' );
 
+
+/**
+ * Custom editor styles
+ */
+
+function edwardslawfirm_add_editor_styles() {
+    add_editor_style( 'css/custom-editor-styles.css' );
+}
+add_action( 'after_setup_theme', 'edwardslawfirm_add_editor_styles' );
+
+
+/**
+ * Add button for custom styles in editor
+ */
+
+// Callback function to insert 'styleselect' into the $buttons array
+function edwardslawfirm_buttons_2( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+// Register our callback to the appropriate filter
+add_filter('mce_buttons_2', 'edwardslawfirm_buttons_2');
+
+
+/**
+ * Add custom buttons to style copy in editor
+ */
+// Callback function to filter the MCE settings
+function edwardslawfirm_before_init_insert_formats( $init_array ) {  
+	// Define the style_formats array
+	$style_formats = array(  
+		// Each array child is a format with it's own settings
+		array(  
+			'title' => 'Large Text',  
+			'inline' => 'span',  
+			'classes' => 'large-text',
+			'wrapper' => false,
+			
+		),  
+	);  
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode( $style_formats );  
+	
+	return $init_array;  
+  
+} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'edwardslawfirm_before_init_insert_formats' );  
+
+
 ?>
