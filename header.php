@@ -45,7 +45,7 @@
 					<a href="<?php the_field('twitter', 'option'); ?>" class="header-social-media-link header-twitter ir">Twitter</a>
 				</li>
 				<li>
-					<a href="<?php the_field('google+', 'option'); ?>" class="header-social-media-link google-plus ir">Google+</a>
+					<a href="<?php the_field('google+', 'option'); ?>" class="header-social-media-link header-google-plus ir">Google+</a>
 				</li>
 			</ul>
 		</div>
