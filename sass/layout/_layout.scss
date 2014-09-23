@@ -136,3 +136,27 @@
  .l-trust-link {
  	margin-top: em(18);
  }
+
+/**
+ * Contact CTA
+ */
+
+.l-contact-form-cta {
+	padding: em(81) 0 0;
+}
+
+.l-contact-cta-col {
+	float: left;
+
+	&.l-left {
+		width: per(471);
+		padding: 0 per(80) 0 per(68);
+	}
+
+	&.l-right {
+		width: per(530);
+	}
+
+}
+
+

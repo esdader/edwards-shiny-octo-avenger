@@ -1,0 +1,120 @@
+/**
+ * Contact CTA
+ */
+
+.contact-cta-quote {
+	color: $gray;
+	font-size: em(18);
+	line-height: (30 / 18);
+	font-style: italic;
+}
+
+.contact-cta-quote-name {
+	margin-top: -.5em;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	color: $red;
+	text-transform: uppercase;
+	font-style: normal;
+	font-family: $header-family;
+	font-size: em(16, 18);
+}
+
+.contact-attorney-cta-title {
+	margin-bottom: .25em;
+	font-size: em(23);
+	line-height: (30/21);
+	color: $blue;
+	font-weight: normal;
+}
+
+.contact-cta-input {
+	width: 100%;
+	padding: .25em 1em;
+	font-size: 1em;
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #ccc;
+
+	::-webkit-input-placeholder {
+		font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+	:-moz-placeholder {
+		font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   	font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+
+	:-ms-input-placeholder {  
+	   	font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif;  
+	}
+}
+
+.contact-cta-textarea {
+	width: 100%;
+	padding: 0 1em;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	font-family: Helvetica, Arial, sans-serif;
+
+	::-webkit-input-placeholder {
+		font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+	:-moz-placeholder {
+		font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   	font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif; 
+	}
+
+	:-ms-input-placeholder {  
+	   	font-size: 1em;
+		font-family: Helvetica, Arial, sans-serif;  
+	}
+}
+
+.disclaimer-checkbox {
+	float: left;
+	margin-top: -.05em;
+	font-size: em(12);
+	font-family: Helvetica, Arial, sans-serif;
+
+	.wpcf7-list-item-label {
+		@extend .visuallyhidden;
+	}
+
+	a {
+		color: $red;
+		text-decoration: underline;
+	}
+}
+
+.legal-issue {
+	margin-bottom: 0;
+}
+
+.contact-attorney-cta-submit {
+	float: right;
+	padding: 0;
+	text-align: right;
+
+	.wpcf7-submit {
+		float: right;
+		background: none;
+		border: none;
+		text-transform: uppercase;
+		color: $red;
+		font-family: $header-family;
+	}
+}
