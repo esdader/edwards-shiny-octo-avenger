@@ -150,4 +150,17 @@ function strip_dashes_from_number ( $phone_number ) {
 	return str_replace($strip, '', $phone_number);
 }
 
+
+/**
+ * Add support for SVG uploads
+ * 
+ * from http://www.leighton.com/blog/enable-upload-of-svg-to-wordpress-media-library
+ * and http://css-tricks.com/snippets/wordpress/allow-svg-through-wordpress-media-uploader/
+ */
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
 ?>
