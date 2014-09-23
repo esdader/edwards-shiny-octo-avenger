@@ -159,4 +159,30 @@
 
 }
 
+/**
+ * CTA icon columns
+ */
+
+.l-cta-icons-con {
+	padding: 1.25em 0 0;
+	text-align: center;
+	background-color: $light-blue;
+}
+
+.l-cta-icon-col {
+	float: left;
+	width: per(270, 1040);
+	margin-left: per(115, 1040);
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.l-cta-icons-wrapper {
+	width: per(1043);
+	padding: 2em 0 2em;
+	display: inline-block;
+	clear: both;
+}
 

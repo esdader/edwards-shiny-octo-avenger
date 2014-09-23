@@ -1,0 +1,49 @@
+/**
+ * CTA Icons
+ */
+
+.cta-icons-main-heading {
+	display: inline;
+	padding: 0 1em .25em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: $header-family;
+	font-size: em(19);
+	line-height: 1.2;
+	color: $blue;
+	text-transform: uppercase;
+	border-bottom: 2px solid $blue;
+}
+
+.cta-icon  {
+	.img-holder {
+		min-height: em(70);
+	}
+
+	h4 {
+		margin: 1em 0 .5em;
+		font-size: em(20);
+		font-family: $header-family;
+		color: $blue;
+		text-transform: uppercase;
+	}
+
+	p {
+		color: $gray;
+		font-size: em(14);
+	}
+
+	
+}
+
+ .cta-icon-link {
+	margin-top: -1em;
+
+ 	a {
+ 		font-family: $header-family;
+ 		color: $red;
+ 		text-transform: uppercase;
+ 		text-decoration: none;
+ 	}
+
+ }
