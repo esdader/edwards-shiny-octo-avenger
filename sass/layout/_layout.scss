@@ -102,3 +102,32 @@
 	overflow: hidden;
 	text-align: center;
 }
+
+/**
+ * footer
+ */
+
+ .l-main-footer-con {
+ 	background: $beige;
+ }
+
+ .l-main-footer {
+ 	padding: em(30) 0 4em per(75);
+ }
+
+ .l-footer-col {
+ 	width: per(235);
+ 	float: left;
+ }
+
+ .l-footer-addy {
+ 	width: per(250);
+ }
+
+ .l-copyright {
+	width: per(270);
+ }
+
+ .l-trust-link {
+ 	margin-top: em(18);
+ }
