@@ -1,0 +1,22 @@
+/**
+ * Home intro
+ */
+
+.home-intro {
+	width: per(790);
+	padding: em(45) 0 em(40);
+	text-align: center;
+}
+
+.home-intro-heading {
+	font-size: em(28);
+	color: $blue;
+	font-weight: normal;
+}
+
+.home-intro-copy {
+	font-size: em(18);
+	line-height: (32 / 18);
+}
+
+

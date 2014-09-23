@@ -12,11 +12,16 @@ get_header(); ?>
 </div>
 <div class="l-home-intro-con.l-outer">
 	<article class="home-intro l-inner">
-		<h2><?php the_field('home_intro_heading'); ?></h2>
-		<?php the_field('home_intro_main_content'); ?>
-		<?php if (get_field('home_intro_main_hidden_content')) : ?>
-			<?php the_field('home_intro_main_hidden_content'); ?>
-		<?php endif; ?>
+		<h2 class="home-intro-heading"><?php the_field('home_intro_heading'); ?></h2>
+		<div class="home-intro-copy">
+			<?php the_field('home_intro_main_content'); ?>
+			<?php if (get_field('home_intro_main_hidden_content')) : ?>
+				<button class="show-more">more</button>
+				<div class="accordian-content">
+					<?php the_field('home_intro_main_hidden_content'); ?>
+				</div>	
+			<?php endif; ?>
+		</div>
 	</article>
 </div>
 <div class="l-cta-icons-con l-outer">
