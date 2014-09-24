@@ -90,7 +90,7 @@ add_action( 'init', 'register_starter_theme_menus' );
  */
 
 if ( function_exists( 'add_theme_support' ) ) {
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails');
 }
 
 /**
@@ -100,10 +100,12 @@ if ( function_exists( 'add_theme_support' ) ) {
  * not active by default because WordPress will save images in the example sizes
  */
 
-// if ( function_exists( 'add_image_size' ) ) { 
-// 	add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
-// 	add_image_size( 'homepage-thumb', 220, 180, true ); //(cropped)
-// }
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'atty_small', 124, 9999 );
+	add_image_size( 'atty_med', 198, 9999);
+	add_image_size( 'atty_lrg', 455, 9999);
+	add_image_size( 'thmb_alt', 300, 9999);
+}
 
 /**
  * Add custom post types

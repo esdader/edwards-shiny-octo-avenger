@@ -10,4 +10,49 @@
 	text-transform: uppercase;
 }
 
+.attorney-contact-btn {
+	display: block;
+	width: 100%;
+	margin: 5px 0 1em;
+	background-color: $orange;
+	font-size: em(14);
+	padding: .5em 0;
+	text-align: center;
+	font-family: $header-family;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 
+.cta-how-help-btn {
+	position: relative;
+	padding: em(14, 24) em(78, 24) em(14, 24) em(14, 24);
+	font-family: $header-family;
+	color: #fff;
+	font-size: em(24);
+	line-height: 1;
+	background: $red;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:after {
+		content: " ";
+		position: absolute;
+		right: em(20, 24);
+		top: em(17, 24);
+		width: 0; 
+		height: 0; 
+		border-top: em(11, 24) solid transparent;
+		border-bottom: em(11, 24) solid transparent;
+		border-left: em(23, 24) solid #fff;
+	}
+}
+
+.excerpt-more-link {
+	padding-left: .5em;
+	font-family: $header-family;
+	font-size: em(16, 18);
+	color: $red;
+	text-transform: uppercase;
+	text-decoration: none;
+}

@@ -75,6 +75,7 @@ h4,
 h5,
 h6 {
 	margin-top: 0;
+	font-weight: normal;
 }
 
 p {
@@ -84,4 +85,34 @@ p {
 ul {
 	padding: 0;
 	margin: 0;
+}
+
+.heading-main {
+	margin-bottom: 1em;
+	font-size: em(30);
+	line-height: 1.1;
+	color: $blue;
+}
+
+.subheading {
+	margin-bottom: em(30, 22);
+	font-size: em(22);
+	line-height: 1.1;
+	color: $blue;
+}
+
+.body-copy {
+	font-size: em(18);
+	line-height: (30 / 18);
+}
+
+.inline-list {
+	padding-left: 2em;
+	margin-top: -1.75em;
+	margin-bottom: em(32);
+
+	li {
+		@extend .body-copy;
+		margin-bottom: 0;
+	}	
 }

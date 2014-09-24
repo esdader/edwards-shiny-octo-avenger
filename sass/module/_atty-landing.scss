@@ -1,0 +1,46 @@
+/**
+ * Attorney landing
+ */
+
+.l-atty-header h1 {
+	margin-bottom: 1.25em;
+	font-size: em(30);
+	line-height: 1.1;
+	font-weight: normal;
+	color: $blue;
+}
+
+.atty-list {
+	width: per(1090);
+	display: inline-block;
+	text-align: left;
+
+	li {
+		width: per(198, 1090);
+		margin: 0 per(10) 10px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	a {
+		font-family: $header-family;
+		font-size: 1em;
+		color: $red;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	p {
+		margin-bottom: .25em;
+	}
+}
+
+.attorney-name {
+	margin: .75em 0 .50em;
+	font-size: em(18);
+	line-height: 1;
+	font-weight: normal;
+}

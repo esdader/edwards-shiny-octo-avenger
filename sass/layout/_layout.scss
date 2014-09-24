@@ -216,7 +216,8 @@
 }
 
 // general content
-.l-general-content {
+.l-general-content,
+.l-single-col-content {
 	padding: em(105) per(65) 0;
 }
 
@@ -252,4 +253,76 @@
 
 .l-firm-awards .l-wrapper-center {
 	margin-bottom: 4em;
+}
+
+
+// attorney landing
+
+.l-atty {
+	padding: em(105) 0 em(81);
+	text-align: center;
+}
+
+.l-atty-header {
+	padding: 0 per(65);
+	text-align: left;
+}
+
+// attorney single
+
+.l-attorney-page {
+	padding: em(105) per(65) em(30);
+}
+
+.l-attorney-main {
+	width: per(700, 1070);
+	float: left;
+}
+
+.l-attorney-secondary {
+	width: per(304, 1070);
+	float: right;
+	text-align: center;
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+// practice area -- single view
+.l-practice-area-single {
+	
+	.l-image-cta-box {
+		float: right;
+		margin: 0 0 2em 2em;
+	}
+
+	.cta-how-help-btn {
+		float: right;
+		margin: -1.75em 1em 0 0;
+	}
+
+}
+
+// practice area -- landing view
+
+.l-practice-entry {
+	margin-bottom: 2.25em;
+}
+
+.l-practice-entry-img-col {
+	float: left;
+	width: per(123, 1070);
+	margin-right: per(35, 1070);
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.l-practice-entry-content-col {
+	float: left;
+	width: per(850, 1070);
 }

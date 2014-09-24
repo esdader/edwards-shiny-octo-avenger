@@ -4,11 +4,7 @@
 
 .entry-content {
 	h1 {
-		margin-bottom: 1em;
-		font-size: em(30);
-		line-height: 1.1;
-		font-weight: normal;
-		color: $blue;
+		@extend .heading-main;
 	}
 
 	h2,
@@ -16,11 +12,7 @@
 	h4
 	h5,
 	h6 {
-		margin-bottom: em(30, 22);
-		font-size: em(22);
-		line-height: 1.1;
-		font-weight: normal;
-		color: $blue;
+		@extend .subheading;
 	}
 
 	.large-text {
@@ -36,6 +28,11 @@
 
 	p {
 		margin-bottom: em(32, 18);
+	}
+
+	ul,
+	ol {
+		@extend .inline-list;
 	}
 }
 

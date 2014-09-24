@@ -1,0 +1,18 @@
+/**
+ * Practice areas
+ */
+
+// single page view
+
+.practice-entry-content {
+	h2 {
+		@extend .subheading;
+		margin-bottom: .25em;
+		color: $blue;
+
+	}
+
+	p {
+		@extend .body-copy;
+	}
+}

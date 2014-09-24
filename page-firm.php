@@ -48,5 +48,5 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
+<?php get_template_part('contact-cta' ); ?>
 <?php get_footer(); ?>
