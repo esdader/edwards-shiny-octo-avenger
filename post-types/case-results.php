@@ -7,9 +7,9 @@ function case_results_init() {
 		'show_in_nav_menus' => true,
 		'show_ui'           => true,
 		'supports'          => array( 'title', 'editor' ),
-		'has_archive'       => true,
+		'has_archive'       => false,
 		'query_var'         => true,
-		'rewrite'           => true,
+		'rewrite'           => array('slug' => 'case-results'),
 		'labels'            => array(
 			'name'                => __( 'Case results', 'edwardslawfirm' ),
 			'singular_name'       => __( 'Case results', 'edwardslawfirm' ),

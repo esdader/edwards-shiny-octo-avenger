@@ -56,3 +56,34 @@
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
+.result-entry-btn {
+	display: inline-block;
+	padding: .75em;
+	margin-top: -.5em;
+	margin-right: .5em;
+	vertical-align: middle;
+	font-family: $header-family;
+	font-size: em(12, 22);
+	line-height: 1;
+	border: none;
+	background: $orange;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $blue;
+	}
+}
+
+.result-entry-close-btn {
+	@extend .result-entry-btn;
+	margin-top: 0;
+	background-color: $blue;
+	font-size: em(12);
+
+	&:hover {
+		background-color: $orange;
+	}
+}

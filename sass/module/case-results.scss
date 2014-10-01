@@ -1,0 +1,26 @@
+/**
+ * case results landing
+ */
+.case-results-header {
+	border-bottom: 1px solid $gray;
+}
+
+.case-results-heading {
+	@extend .subheading;
+	line-height: (50/22);
+	margin: 0;
+}
+
+.case-result-listing-heading {
+	margin-bottom: 1em;
+	font-family: $headline-family;
+	text-transform: uppercase;
+	color: $blue;
+	letter-spacing: 1px;
+
+}
+
+.listing-award-ammount {
+	padding-left: 1.5em;
+	color: $red;
+}

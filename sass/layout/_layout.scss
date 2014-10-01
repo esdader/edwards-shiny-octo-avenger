@@ -326,3 +326,20 @@
 	float: left;
 	width: per(850, 1070);
 }
+
+.l-case-resuslts-listing {
+	padding: 1em per(105) 0 per(65);
+}
+
+.l-case-btn-con {
+	padding: em(12) 0 0;
+}
+
+.l-case-result-listing-case {
+	padding: em(30) 0;
+	border-bottom: 1px solid $gray;
+}
+
+.l-case-result-listing-cases {
+	display: none;
+}
