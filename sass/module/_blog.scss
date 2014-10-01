@@ -1,0 +1,20 @@
+/**
+ * Blog -- single view
+ */
+
+.blog-title {
+	@extend .heading-main;
+}
+
+.post-main-img {
+	float: right;
+	padding: 0 0 2em 2em;
+}
+
+.entry-content .single-view-meta {
+	margin-bottom: 1em;
+	font-family: $headline-family;
+	font-size: em(14);
+	color: #000;
+	text-transform: uppercase;
+}

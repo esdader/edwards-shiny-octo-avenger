@@ -9,6 +9,40 @@
 	font-style: italic;
 }
 
+.quote-wrapper {
+	position: relative;
+	padding-left: 1em;
+
+	&:before {
+		content: '\201C';
+		font-size: 120px;
+		color: #a3b4c0;
+		font-style: italic;
+		position: absolute;
+		top: -14px;
+		left: -36px;
+		line-height: 1;
+		height: 44px;
+	}
+
+	&:after {
+		content: '\201D';
+		font-size: 120px;
+		color: #a3b4c0;
+		font-style: italic;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		line-height: 1;
+		position: absolute;
+		bottom: -2px;
+		right: -30px;
+		line-height: 1;
+		padding: 0;
+		height: 44px;
+	}
+}
+
 .contact-cta-quote-name {
 	margin-top: -.5em;
 	margin-bottom: 1em;

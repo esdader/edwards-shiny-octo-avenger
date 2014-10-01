@@ -4,6 +4,9 @@
  * Single practice areas
  */
 
+// make sure contact cta gets right ID
+$template_part_id = $post->ID;
+
 get_header(); ?>
 <div class="l-practice-area-single l-single-col-content l-inner">
 	<div class="hentry">

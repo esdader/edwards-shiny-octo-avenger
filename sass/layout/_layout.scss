@@ -34,6 +34,7 @@
 
 .l-inner {
 	max-width: $max-px-width;
+	width: $max-px-width;
 	margin: 0 auto;
 }
 
@@ -98,11 +99,13 @@
 // hero carousel
 
 .l-hero-con {
-	width: 100;
+	width: 100%;
+	padding-top: em(105);
 }
 
 .l-hero {
 	max-width: $max-px-width;
+	width: $max-px-width;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
@@ -113,7 +116,7 @@
  */
 
  .l-main-footer-con {
- 	background: $beige;
+ 	background: #e7e7d2;
  }
 
  .l-main-footer {
@@ -131,6 +134,11 @@
 
  .l-copyright {
 	width: per(270);
+ }
+
+ .l-copyright,
+ .l-footer-links {
+ 	padding-top: 1.125em;
  }
 
  .l-trust-link {
@@ -157,6 +165,19 @@
 		width: per(530);
 	}
 
+}
+
+// single view blog variation
+.l-blog-contact-cta-col {
+	&.l-left {
+		width: per(600);
+		padding: 0 0 0 per(68);
+	}
+
+	&.l-right {
+		width: 500px;
+		padding: em(120) 0 0 per(108)
+	}
 }
 
 /**
@@ -347,4 +368,31 @@
 // video page-break-inside: 
 .l-video-main-container {
 	padding: em(105) per(40) 0 per(40);
+}
+
+
+// blog landing page
+.l-blog-landing {
+	padding: em(105) per(65) 0;
+}
+
+// awards and honors
+.l-awards-and-honors-con {
+	padding-right: per(90);
+}
+
+.l-awards-row {
+	clear: both;
+	margin-bottom: 1.25em;
+}
+
+.l-awards-image-col {
+	float: left;
+	width: per(300);
+	padding-right: per(55);
+}
+
+.l-awards-content-col {
+	float: left;
+	width: per(740);
 }

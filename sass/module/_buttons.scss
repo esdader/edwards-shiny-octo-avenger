@@ -34,6 +34,7 @@
 	background: $red;
 	text-decoration: none;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 
 	&:after {
 		content: " ";
@@ -46,6 +47,27 @@
 		border-bottom: em(11, 24) solid transparent;
 		border-left: em(23, 24) solid #fff;
 	}
+
+	&.reverse-view {
+		padding: em(14, 24) em(14, 24) em(14, 24) em(78, 24);
+
+		&:after {
+			content: none;
+		}
+		&:before {
+			content: " ";
+			position: absolute;
+			left: em(20, 24);
+			top: em(17, 24);
+			width: 0; 
+			height: 0; 
+			border-top: em(11, 24) solid transparent;
+			border-bottom: em(11, 24) solid transparent;
+			border-right: em(23, 24) solid #fff;
+		}
+	}
+
+	
 }
 
 .excerpt-more-link {
