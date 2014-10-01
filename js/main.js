@@ -5,6 +5,8 @@
         caseResltsCloseBtn = $('.result-entry-close-btn');
 
 
+    $('.l-embed-con').fitVids();
+
     showMoreButtons.on('click', function () {
         var $this = $(this),
             accordianContent = $this.next('.accordian-content');

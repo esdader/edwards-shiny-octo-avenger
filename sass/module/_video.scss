@@ -1,0 +1,23 @@
+/**
+ * video
+ */
+
+.video-main-container {
+	h1,
+	h2 {
+		@extend .heading-main;	
+		color: $blue;
+	}
+
+	li,
+	p,
+	blockquote {
+		@extend .body-copy;
+	}
+}
+
+.l-embed-con {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 per(24, 1048) em(48) 0;
+}
