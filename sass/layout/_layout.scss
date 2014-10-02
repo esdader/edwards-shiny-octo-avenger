@@ -80,15 +80,25 @@
 
 	&:hover {
 		background-color: $beige;
-		.sub-menu {
+		> .sub-menu {
 			display: block;
+		}
+	}
 
-			.sub-menu {
-				display: none;
-			}
+	&#menu-item-176 {
+		&:after {
+			left: 116px;
+			top: 50%;
+			right: auto;
+			margin-top: -5px;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-left: 5px solid $blue;
 		}
 	}
 }
+
+
 
 .menu-item-171 {
 	& > .sub-menu {
@@ -96,10 +106,58 @@
 	}
 }
 
+.menu-item-161 {
+	& > .sub-menu {
+		width: 215px;
+	}
+}
+
+.menu-item-176 {
+	& > .sub-menu {
+		width: 365px;
+	}
+}
+
+// atty image drop down
+.menu-item-165 {
+	& > .sub-menu {
+		width: 732px;
+		padding: 13px 16px 0;
+		li {
+			width: 140px;
+			padding: 8px;
+			float: left;
+			border: none;
+
+			img {
+				padding: 0 !important;
+			}
+
+			&:hover {
+				padding-left: 8px;
+			}
+
+			a {
+				font-size: 10px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		}
+
+		// forces a second row
+		.menu-item-167 {
+			margin-right: 10px;
+		}
+	}
+
+}
+
+
+
+
+
 // hero carousel
 
 .l-hero-con {
-	width: 100%;
 	padding-top: em(105);
 }
 
@@ -107,8 +165,23 @@
 	max-width: $max-px-width;
 	width: $max-px-width;
 	margin: 0 auto;
-	overflow: hidden;
+}
+
+.edwards-slide {
+	position: relative;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+}
+
+.l-text-overlay {
 	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-bottom: em(60);
 }
 
 /**
@@ -150,7 +223,7 @@
  */
 
 .l-contact-form-cta {
-	padding: em(81) 0 0;
+	padding: em(70) 0 1em;
 }
 
 .l-contact-cta-col {
@@ -180,12 +253,61 @@
 	}
 }
 
+// blog landing page
+.l-blog-landing-single-post {
+	border-bottom: 1px solid $gray;
+}
+.l-blog-landing-single-post-content-col {
+	float: left;
+	width: per(680, 1047);
+}
+
+.l-blog-landing-featured-image {
+	float: right;
+	width: per(320, 1047);
+	padding-top: em(47);
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.l-post-social-media-likes-con {
+	clear: both;
+	padding-bottom: 2em;
+
+	li {
+		width: 110px;
+		span {
+			vertical-align: top !important;
+		}
+	}
+}
+
+.l-blog-landing-dual-post {
+	padding-top: 2.25em;
+	border-bottom: 1px solid $gray;
+}
+
+.l-blog-landing-dual-post-col {
+	width: per(480, 1047);
+
+	&.l-left {
+		float: left;
+	}
+
+	&.l-right {
+		float: right;
+	}
+}
+
 /**
  * CTA icon columns
  */
 
 .l-cta-icons-con {
-	padding: 2em 0 0;
+	padding: 1.25em 0 0;
 	text-align: center;
 	background-color: $light-blue;
 }
@@ -202,7 +324,7 @@
 
 .l-cta-icons-wrapper {
 	width: per(1043);
-	padding: 2em 0 2em;
+	padding: 2.5em 0 2em;
 	display: inline-block;
 	clear: both;
 }
@@ -240,6 +362,26 @@
 .l-general-content,
 .l-single-col-content {
 	padding: em(105) per(65) 0;
+
+	&.l-interior-section {
+		padding-top: em(50);
+	}
+}
+
+
+// contact page
+.l-contact-details-col {
+	width: per(430, 1047);
+	float: left;
+}
+
+.l-contact-map-col {
+	float: left;
+}
+
+.l-contact-page-form-con {
+	width: per(530, 1047);
+	padding-bottom: em(80);
 }
 
 // firm awards section
@@ -280,7 +422,7 @@
 // attorney landing
 
 .l-atty {
-	padding: em(105) 0 em(81);
+	padding: 2em 0 em(81);
 	text-align: center;
 }
 
@@ -396,3 +538,10 @@
 	float: left;
 	width: per(740);
 }
+
+// staff members
+
+.l-staff-member-entry {
+	margin-bottom: 2em;
+}
+

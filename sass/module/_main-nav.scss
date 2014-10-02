@@ -17,8 +17,11 @@
 		font-size: em(18);
 		color: $blue;
 		text-decoration: none;
-		text-transform: uppercase;
 		letter-spacing: 1px;
+	}
+
+	& > li > a {
+		text-transform: uppercase;
 	}
 }
 
@@ -49,5 +52,10 @@
 		&:hover {
 			padding-left: em(20);
 		}
+	}
+
+	.sub-menu {
+		top: 0;
+		left: 100%;
 	}
 }

@@ -6,15 +6,53 @@
 	@extend .heading-main;
 }
 
+.blog-heading {
+	@extend .subheading;
+	margin-bottom: .5em;
+}
+
 .post-main-img {
 	float: right;
 	padding: 0 0 2em 2em;
 }
 
+.blog-landing .landing-view-meta,
 .entry-content .single-view-meta {
 	margin-bottom: 1em;
 	font-family: $headline-family;
 	font-size: em(14);
 	color: #000;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.l-blog-single-main-content .l-horizontal-list {
+	padding-left: 0;
+	margin: 0;
+}
+
+.blog-landing .landing-view-meta {
+	margin-bottom: 1.5em;
+}
+
+.moretag {
+	font-family: $headline-family;
+	font-size: em(16, 18);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $red;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.blog-landing-content {
+	p,
+	li,
+	blockquote {
+		font-size: em(18);
+		line-height: 1.8;
+	}
 }

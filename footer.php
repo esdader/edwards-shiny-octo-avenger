@@ -56,19 +56,25 @@
 				wp_nav_menu($params);
 			?>
 			<ul class="footer-links l-trust-link">
-				<li><a href="#add-link">The Edwards Trust</a></li>
+				<li><a href="http://theedwardstrust.org/">The Edwards Trust</a></li>
 			</ul>
 		</div>
 	</footer>
 </div>
 
     <?php wp_footer(); ?>
-    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
     <script>
         // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         // (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         // g.src='//www.google-analytics.com/ga.js';
         // s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
 </body>
 </html>

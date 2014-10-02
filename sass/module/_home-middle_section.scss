@@ -16,8 +16,9 @@
 
 .home-middle-section .l-right a {
 	font-family: $header-family;
-	font-size: em(14, 18);
+	font-size: em(13, 18);
 	color: $red;
 	text-transform: uppercase;
 	text-decoration: none;
+	letter-spacing: 1px;
 }

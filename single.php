@@ -25,7 +25,23 @@ get_header(); ?>
 			</p>
 			<section class="l-blog-single-main-content">
 				<?php the_content(); ?>
+				<div class="l-post-social-media-likes-con">
+					<ul class="l-horizontal-list social-media-likes clearfix">
+						<li><div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></li>
+						<li>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>">Tweet</a>
+						</li>
+						<li>
+							<div class="g-plusone" data-href="<?php the_title(); ?>"></div>
+						</li>
+						<li>
+							<script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="right"></script>
+						</li>
+
+					</ul>
+				</div>
 			</section>
+
 			<?php endwhile; ?>
 			<!-- post navigation -->
 			<?php else: ?>

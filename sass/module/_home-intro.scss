@@ -3,15 +3,17 @@
  */
 
 .home-intro {
-	width: per(790);
+	width: per(790, 1200);
 	padding: em(45) 0 em(40);
 	text-align: center;
+	margin: 0 auto;
 }
 
 .home-intro-heading {
 	font-size: em(28);
 	color: $blue;
 	font-weight: normal;
+	margin-bottom: em(20, 28);
 }
 
 .home-intro-copy {
@@ -20,3 +22,22 @@
 }
 
 
+/**
+ * Hero
+ */
+
+ .l-text-overlay {
+ 	h2 {
+ 		margin-bottom: em(40, 33);
+ 		color: #fff;
+ 		font-size: em(33);
+ 		line-height: 1;
+
+ 		span {
+ 			display: block;
+ 			margin: 0 auto;
+ 			font-size: em(50, 33);
+ 			line-height: 1;
+ 		}
+ 	}
+ }

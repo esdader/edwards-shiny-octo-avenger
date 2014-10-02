@@ -5,40 +5,41 @@
  */
 
 get_header(); ?>
-<?php if (have_rows('homepage_carousel') ) : ?>
-	<div class="l-hero-con">
-		<div class="l-hero">
-			<?php while ( have_rows('homepage_carousel') ) : the_row(); ?>
-				<?php $img = get_sub_field('homepage_carousel_image'); ?>
-				<div class="edwards-slide">
-					<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
-					<div class="l-text-overlay">
-						<h2>
-							<?php the_sub_field('homepage_carousel_copy_line_one'); ?>
-							 <span><?php the_sub_field('homepage_carousel_copy_line_two'); ?></span>
-						</h2>
-						<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
-					</div>
-				</div>
-			<?php endwhile; ?>
+<div class="l-hero-con">
+	<div class="l-hero">
+		<div class="edwards-slide">
+			<img src="<?php bloginfo('template_directory');?>/img/Home_Justice.jpg" alt="">
+			<div class="l-text-overlay">
+				<h2>
+					We’re proud of what we represent. <span>Justice</span>
+				</h2>
+				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
+			</div>
+		</div>
+		<div  class="edwards-slide">
+			<img src="<?php bloginfo('template_directory');?>/img/Home_You.jpg" alt="">
+			<div class="l-text-overlay">
+				<h2>
+					We’re proud of what we represent. <span>Justice</span>
+				</h2>
+				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
+			</div>
 		</div>
 	</div>
-<?php endif; ?>
+</div>
 <div class="l-home-intro-con.l-outer">
-	<div class="l-inner">
-		<article class="home-intro">
-			<h2 class="home-intro-heading"><?php the_field('home_intro_heading'); ?></h2>
-			<div class="home-intro-copy">
-				<?php the_field('home_intro_main_content'); ?>
-				<?php if (get_field('home_intro_main_hidden_content')) : ?>
-					<button class="show-more">more</button>
-					<div class="accordian-content">
-						<?php the_field('home_intro_main_hidden_content'); ?>
-					</div>	
-				<?php endif; ?>
-			</div>
-		</article>
-	</div>
+	<article class="home-intro l-inner">
+		<h2 class="home-intro-heading"><?php the_field('home_intro_heading'); ?></h2>
+		<div class="home-intro-copy">
+			<?php the_field('home_intro_main_content'); ?>
+			<?php if (get_field('home_intro_main_hidden_content')) : ?>
+				<button class="show-more">more</button>
+				<div class="accordian-content">
+					<?php the_field('home_intro_main_hidden_content'); ?>
+				</div>	
+			<?php endif; ?>
+		</div>
+	</article>
 </div>
 <div class="l-cta-icons-con l-outer">
 	<section class="l-inner cta-icons clearfix">

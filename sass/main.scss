@@ -27,6 +27,10 @@
 /* ==========================================================================
    modules
    ========================================================================== */
+// 3rd party
+@import "module/slick";
+
+// site modules
 @import "module/header";
 @import "module/footer";
 @import "module/main-nav";
@@ -46,6 +50,9 @@
 @import "module/blog";
 @import "module/review";
 @import "module/awards";
+@import "module/staff-members";
+@import "module/contact";
+@import "module/pagination";
 
 /* ==========================================================================
    utils

@@ -101,8 +101,8 @@ if ( function_exists( 'add_theme_support' ) ) {
  */
 
 if ( function_exists( 'add_image_size' ) ) { 
-	add_image_size( 'atty_small', 124, 9999 );
-	add_image_size( 'atty_med', 198, 9999);
+	add_image_size( 'atty_small', 124, 9999);
+	add_image_size( 'atty_med', 252, 9999);
 	add_image_size( 'atty_lrg', 455, 9999);
 	add_image_size( 'thmb_alt', 300, 9999);
 }
@@ -213,5 +213,64 @@ function edwardslawfirm_before_init_insert_formats( $init_array ) {
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'edwardslawfirm_before_init_insert_formats' );  
 
+
+// building in offset function for different
+// number of posts on each blog page
+
+// add_action('pre_get_posts', 'myprefix_query_offset', 1 );
+// function myprefix_query_offset(&$query) {
+
+//     //Before anything else, make sure this is the right query...
+//     if ( ! $query->is_posts_page ) {
+//         return;
+//     }
+
+//     //First, define your desired offset...
+//     $offset = 1;
+    
+//     //Next, determine how many posts per page you want (we'll use WordPress's settings)
+//     $ppp = get_option('posts_per_page');
+
+//     //Next, detect and handle pagination...
+//     if ( $query->is_paged ) {
+
+
+//         //Manually determine page query offset (offset + current page (minus one) x posts per page)
+//         $page_offset = $offset + ( ($query->query_vars['paged']-1) * $ppp );
+
+//         //Apply adjust page offset
+//         $query->set('offset', '3');
+
+//     }
+//     else {
+
+//         //This is the first page. Just use the offset...
+//         $query->set('offset',$offset);
+
+//     }
+// }
+
+// add_filter('found_posts', 'myprefix_adjust_offset_pagination', 1, 2 );
+// function myprefix_adjust_offset_pagination($found_posts, $query) {
+
+//     //Define our offset again...
+//     $offset = 1;
+
+//     //Ensure we're modifying the right query object...
+//     if ( $query->is_posts_page ) {
+//         //Reduce WordPress's found_posts count by the offset... 
+//         return $found_posts - $offset;
+//     }
+//     return $found_posts;
+// }
+
+
+// changin the read more on excerpt
+function new_excerpt_more($more) {
+	global $post;
+	return ' [...] <a class="moretag" href="'. get_permalink($post->ID) . '">Read More</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
 
 ?>

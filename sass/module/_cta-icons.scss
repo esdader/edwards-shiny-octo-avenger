@@ -8,11 +8,12 @@
 	margin-bottom: 1em;
 	text-align: center;
 	font-family: $header-family;
-	font-size: em(19);
+	font-size: em(18);
 	line-height: 1.2;
 	color: $blue;
 	text-transform: uppercase;
 	border-bottom: 2px solid $blue;
+	letter-spacing: 1px;
 }
 
 .cta-icon  {
@@ -22,10 +23,11 @@
 
 	h4 {
 		margin: 1em 0 .5em;
-		font-size: em(20);
+		font-size: em(19);
 		font-family: $header-family;
 		color: $blue;
 		text-transform: uppercase;
+		letter-spacing: 1px;
 	}
 
 	p {
@@ -44,6 +46,7 @@
  		color: $red;
  		text-transform: uppercase;
  		text-decoration: none;
+ 		letter-spacing: 1px;
  	}
 
  }

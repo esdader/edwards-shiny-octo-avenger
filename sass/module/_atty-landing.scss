@@ -16,13 +16,17 @@
 	text-align: left;
 
 	li {
-		width: per(198, 1090);
+		width: per(252, 1090);
 		margin: 0 per(10) 10px;
 
 		img {
 			max-width: 100%;
 			height: auto;
 		}
+	}
+
+	&.associate-list li {
+		width: per(198, 1090);
 	}
 
 	a {
@@ -43,4 +47,24 @@
 	font-size: em(18);
 	line-height: 1;
 	font-weight: normal;
+}
+
+.atty-section-title {
+	@extend .subheading;
+	color: $blue;
+}
+.partner-list {
+	margin-bottom: 2em;
+}
+
+.atty-featured-image {
+	float: right;
+	max-width: 524px;
+	height: auto;
+	padding-left: 48px;
+	padding-bottom: 48px;
+}
+
+.atty-intro p {
+	font-size: em(22, 18);
 }

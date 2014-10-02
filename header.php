@@ -27,6 +27,18 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+
 <div class="l-outer l-main-header-outer">
 	<header class="l-main-header l-inner" role="banner">
 		<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('template_directory'); ?>/img/logo.png'" alt="The Edwards Law Firm"></a>
@@ -35,7 +47,7 @@
 			$toll_free = get_field('toll_free_number', 'option');
 		?>
 		<div class="header-phone"><a href="tel:<?php echo strip_dashes_from_number($phone); ?>"><?php echo $phone; ?></a> / <a href="tel:<?php echo strip_dashes_from_number($toll_free); ?>"><?php echo $toll_free; ?></a></div>
-		<a href="#add-link" class="icon-header-contact ir">Contact</a>
+		<a href="mailto:<?php the_field('email', 'option'); ?>" class="icon-header-contact ir">Contact</a>
 		<div class="header-social-media-links">
 			<ul class="l-horizontal-list header-social-media-list">
 				<li>

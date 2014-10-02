@@ -1,0 +1,48 @@
+/**
+ * Pagination
+ */
+ .l-pagination {
+ 	padding: em(24) 0 0;
+	text-align: center;
+ }
+
+ .page-numbers {
+ 	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	@extend .clearfix;
+
+	li {
+		float: left;
+		margin-right: 6px;
+
+		span {
+			display: block;
+			padding: 0 .375em .125em;
+			line-height: 22px;
+			border: 1px solid #48dcff;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 0 .375em .125em;
+		line-height: 22px;
+		border: 1px solid #ccc;
+		text-decoration: none;
+
+		&:hover {
+			border: 1px solid #48dcff;
+		}
+	}
+}
+
+.pagi-intro {
+	display: inline-block;
+	margin-right: 6px;
+	padding: 0 .375em .125em;
+	line-height: 22px;
+	border: 1px solid #ccc;
+	vertical-align: top;
+}

@@ -1,0 +1,31 @@
+/**
+ * Staff memebers
+ */
+
+.staff-members {
+	h3 {
+		margin-bottom: .5em;
+		font-family: $headline-family;
+		font-size: em(18);
+		text-transform: uppercase;
+		color: $blue;
+		letter-spacing: 1px;
+
+		a {
+			color: $red;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+	p,
+	li,
+	blockquote {
+		@extend .body-copy;
+		margin-bottom: 1em;
+	}
+}

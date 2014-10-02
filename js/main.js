@@ -2,7 +2,8 @@
 
     var showMoreButtons = $('.show-more'),
         caseResltsOpenBtn = $('.result-entry-btn'),
-        caseResltsCloseBtn = $('.result-entry-close-btn');
+        caseResltsCloseBtn = $('.result-entry-close-btn'),
+        heroCarousel       = $('.l-hero');
 
 
     $('.l-embed-con').fitVids();
@@ -40,5 +41,22 @@
             btn.fadeIn();
         });
     });
+
+    if (heroCarousel.length > 0) {
+        
+
+        $(document).ready(function(){
+            heroCarousel.slick({
+              dots: false,
+              infinite: true,
+              speed: 500,
+              fade: true,
+              slide: 'div',
+              cssEase: 'linear',
+              autoplay: true,
+              arrows: false
+            });
+        });
+    }
 
 }) (jQuery, window);
