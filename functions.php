@@ -217,52 +217,60 @@ add_filter( 'tiny_mce_before_init', 'edwardslawfirm_before_init_insert_formats' 
 // building in offset function for different
 // number of posts on each blog page
 
-// add_action('pre_get_posts', 'myprefix_query_offset', 1 );
-// function myprefix_query_offset(&$query) {
+function limit_posts( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', '2' );
+    }
+}
+add_action( 'pre_get_posts', 'limit_posts' );
 
-//     //Before anything else, make sure this is the right query...
-//     if ( ! $query->is_posts_page ) {
-//         return;
-//     }
+add_action('pre_get_posts', 'myprefix_query_offset', 1 );
+function myprefix_query_offset(&$query) {
 
-//     //First, define your desired offset...
-//     $offset = 1;
+    //Before anything else, make sure this is the right query...
+    if ( ! $query->is_posts_page ) {
+        return;
+    }
+
+    //First, define your desired offset...
+    $offset = 1;
     
-//     //Next, determine how many posts per page you want (we'll use WordPress's settings)
-//     $ppp = get_option('posts_per_page');
+    //Next, determine how many posts per page you want (we'll use WordPress's settings)
+    // $ppp = get_option('posts_per_page');
+    $ppp = 2;
 
-//     //Next, detect and handle pagination...
-//     if ( $query->is_paged ) {
+    //Next, detect and handle pagination...
+    if ( $query->is_paged ) {
 
 
-//         //Manually determine page query offset (offset + current page (minus one) x posts per page)
-//         $page_offset = $offset + ( ($query->query_vars['paged']-1) * $ppp );
+        //Manually determine page query offset (offset + current page (minus one) x posts per page)
+        $page_offset = $offset + ( ($query->query_vars['paged']-1) * $ppp );
 
-//         //Apply adjust page offset
-//         $query->set('offset', '3');
+        //Apply adjust page offset
+        $query->set('offset', '3');
 
-//     }
-//     else {
+    }
+    else {
 
-//         //This is the first page. Just use the offset...
-//         $query->set('offset',$offset);
+        //This is the first page. Just use the offset...
+        $query->set('offset',$offset);
 
-//     }
-// }
+    }
+}
 
-// add_filter('found_posts', 'myprefix_adjust_offset_pagination', 1, 2 );
-// function myprefix_adjust_offset_pagination($found_posts, $query) {
+add_filter('found_posts', 'myprefix_adjust_offset_pagination', 1, 2 );
+function myprefix_adjust_offset_pagination($found_posts, $query) {
 
-//     //Define our offset again...
-//     $offset = 1;
+    //Define our offset again...
+    $offset = 1;
 
-//     //Ensure we're modifying the right query object...
-//     if ( $query->is_posts_page ) {
-//         //Reduce WordPress's found_posts count by the offset... 
-//         return $found_posts - $offset;
-//     }
-//     return $found_posts;
-// }
+    //Ensure we're modifying the right query object...
+    if ( $query->is_posts_page ) {
+        //Reduce WordPress's found_posts count by the offset... 
+        return $found_posts - $offset;
+    }
+    return $found_posts;
+}
 
 
 // changin the read more on excerpt

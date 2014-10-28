@@ -17,7 +17,7 @@ get_header(); ?>
 							<?php the_sub_field('homepage_carousel_copy_line_one'); ?>
 							 <span><?php the_sub_field('homepage_carousel_copy_line_two'); ?></span>
 						</h2>
-						<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
+						<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help?</a>
 					</div>
 				</div>
 			<?php endwhile; ?>
@@ -27,7 +27,7 @@ get_header(); ?>
 <div class="l-home-intro-con.l-outer">
 	<div class="l-inner">
 		<article class="home-intro">
-			<h2 class="home-intro-heading"><?php the_field('home_intro_heading'); ?></h2>
+			<h1 class="home-intro-heading"><?php the_field('home_intro_heading'); ?></h1>
 			<div class="home-intro-copy">
 				<?php the_field('home_intro_main_content'); ?>
 				<?php if (get_field('home_intro_main_hidden_content')) : ?>

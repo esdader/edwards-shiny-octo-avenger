@@ -6,8 +6,9 @@
 	background: $orange;
 	border: none;
 	color: #fff;
-	font-family: Helvetica,Arial, sans-serif;
+	font-family: $header-family;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .attorney-contact-btn {
@@ -26,7 +27,7 @@
 
 .cta-how-help-btn {
 	position: relative;
-	padding: em(14, 24) em(78, 24) em(14, 24) em(14, 24);
+	padding: em(14, 24) em(50, 24) em(14, 24) em(14, 24);
 	font-family: $header-family;
 	color: #fff;
 	font-size: em(24);
@@ -39,7 +40,7 @@
 	&:after {
 		content: " ";
 		position: absolute;
-		right: em(20, 24);
+		right: em(12, 24);
 		top: em(17, 24);
 		width: 0; 
 		height: 0; 
@@ -49,7 +50,7 @@
 	}
 
 	&.reverse-view {
-		padding: em(14, 24) em(14, 24) em(14, 24) em(78, 24);
+		padding: em(14, 24) em(14, 24) em(14, 24) em(50, 24);
 
 		&:after {
 			content: none;
@@ -57,7 +58,7 @@
 		&:before {
 			content: " ";
 			position: absolute;
-			left: em(20, 24);
+			left: em(12, 24);
 			top: em(17, 24);
 			width: 0; 
 			height: 0; 

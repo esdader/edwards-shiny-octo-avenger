@@ -3,10 +3,37 @@
     var showMoreButtons = $('.show-more'),
         caseResltsOpenBtn = $('.result-entry-btn'),
         caseResltsCloseBtn = $('.result-entry-close-btn'),
-        heroCarousel       = $('.l-hero');
+        heroCarousel       = $('.l-hero'),
+        $mainNav           = $('.main-menu'),
+        $subNav            = $mainNav.find('.menu-item-has-children');
 
 
-    $('.l-embed-con').fitVids();
+    // $('.l-embed-con').fitVids();
+
+    $subNav.on('mouseenter', function () {
+        $(this).addClass('opened-by-hover');
+    });
+
+    $subNav.on('mouseleave', function () {
+        $(this).removeClass('opened-by-hover');
+    });
+
+
+    // $subNav.on('click', function (e) {
+    //     var $this = $(this);
+    //     e.preventDefault();
+
+    //     if (!$this.hasClass('is-open')) {
+    //         $('.is-open').removeClass('is-open');
+    //     }
+    //     $this.toggleClass('is-open');
+    // });
+
+    // $(document).on('click', function (event) {
+    //   if (!$(event.target).closest('.menu-item-has-children').length) {
+    //     $('.is-open').removeClass('is-open');
+    //   }
+    // });
 
     showMoreButtons.on('click', function () {
         var $this = $(this),

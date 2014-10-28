@@ -60,8 +60,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</ul>
 		<div class="l-atty-header">
-			<h2 class="atty-section-title"><?php the_field('attorneys_section_heading', 8); ?></h2>
-			<!-- <h2 class="atty-section-title"><?php the_field('lawyers_section_heading', $id); ?></h2> -->
+			<h2 class="atty-section-title"><?php the_field('associates_section_heading', 8); ?></h2>
 		</div>
 		<ul class="atty-list l-horizontal-list associate-list clearfix">
 			<?php

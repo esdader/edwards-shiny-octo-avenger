@@ -60,9 +60,13 @@
 .atty-featured-image {
 	float: right;
 	max-width: 524px;
-	height: auto;
 	padding-left: 48px;
 	padding-bottom: 48px;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 .atty-intro p {

@@ -3,17 +3,17 @@
  */
 
 .home-intro {
-	width: per(790, 1200);
+	width: per(1020, 1200);
 	padding: em(45) 0 em(40);
 	text-align: center;
 	margin: 0 auto;
 }
 
 .home-intro-heading {
-	font-size: em(28);
+	font-size: em(32);
 	color: $blue;
 	font-weight: normal;
-	margin-bottom: em(20, 28);
+	margin-bottom: em(20, 32);
 }
 
 .home-intro-copy {

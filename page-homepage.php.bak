@@ -13,7 +13,7 @@ get_header(); ?>
 				<h2>
 					We’re proud of what we represent. <span>Justice</span>
 				</h2>
-				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
+				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help?</a>
 			</div>
 		</div>
 		<div  class="edwards-slide">
@@ -22,7 +22,7 @@ get_header(); ?>
 				<h2>
 					We’re proud of what we represent. <span>Justice</span>
 				</h2>
-				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help</a>
+				<a class="cta-how-help-btn" href="http://ed.esd/contact/">How Can We Help?</a>
 			</div>
 		</div>
 	</div>

@@ -21,7 +21,7 @@ get_header(); ?>
 							}
 						?>
 					</div>
-					<a class="cta-how-help-btn" href="<?php echo get_page_link(18); ?>">How Can We Help</a>
+					<a class="cta-how-help-btn" href="<?php echo get_page_link(18); ?>">How Can We Help?</a>
 				</div>
 				<?php the_content(); ?>
 			</section>
@@ -33,6 +33,7 @@ get_header(); ?>
 		</article>
 	</div>
 </div>
+<?php if ( get_field('show_practice_areas') ) : ?>
 <div class="l-cta-icons-con l-outer">
 	<section class="l-inner cta-icons clearfix">
 		<h3 class="cta-icons-main-heading"><?php the_field('practice_areas_section_title'); ?></h3>
@@ -45,7 +46,7 @@ get_header(); ?>
 						$alt = $img['alt'];
 					} else {
 						$alt = get_field('practice_area_litigants_col1');
-					}
+					}	
 				?>
 				<div class="img-holder">
 					<?php if ($svg) : ?>
@@ -115,5 +116,6 @@ get_header(); ?>
 		</div>
 	</section>
 </div>
+<?php endif; ?>
 <?php include(locate_template('contact-cta.php')); ?>
 <?php get_footer(); ?>

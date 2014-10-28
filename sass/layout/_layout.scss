@@ -58,7 +58,7 @@
 .l-main-nav {
 	position: absolute;
 	top: 100%;
-	z-index: 90;
+	z-index: 900;
 	margin-left: per(42);
 }
 
@@ -77,11 +77,13 @@
 		border-right: 5px solid transparent;
 		border-top: 5px solid $blue;
 	}
-
-	&:hover {
+	
+	&:hover,
+	&.is-open {
 		background-color: $beige;
 		> .sub-menu {
 			display: block;
+			z-index: 991;
 		}
 	}
 
@@ -158,7 +160,7 @@
 // hero carousel
 
 .l-hero-con {
-	padding-top: em(105);
+	padding-top: em(54);
 }
 
 .l-hero {
@@ -223,7 +225,7 @@
  */
 
 .l-contact-form-cta {
-	padding: em(70) 0 1em;
+	padding: em(70) 0 1.5em;
 }
 
 .l-contact-cta-col {

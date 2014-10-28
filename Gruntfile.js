@@ -47,8 +47,10 @@ module.exports = function (grunt) {
             css: {
                 files: 'sass/**/*.scss',
                 tasks: ['sass:dev', 'autoprefixer']
+                //tasks: ['sass:dev']
             }
         }
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');

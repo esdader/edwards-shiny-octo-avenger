@@ -58,7 +58,6 @@ get_header(); ?>
 			
 		<?php endwhile; endif; ?>
 	<?php endif; ?>
-	
 	<?php if ( have_posts() ) : $i = 0; ?>
 		<div class="l-blog-landing-dual-post clearfix">
 			<?php while ( have_posts() ) : the_post(); ?>
