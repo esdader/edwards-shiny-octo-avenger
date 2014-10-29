@@ -11,7 +11,7 @@ $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: '\2190' !default;
 $slick-next-character: '\2192' !default;
 $slick-dot-character: '\2022' !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 16px !default;
 $opacity-default: .75;
 $opacity-on-hover: 1;
 $opacity-not-active: .25;
@@ -142,11 +142,11 @@ $opacity-not-active: .25;
 @if $slick-font-family == "slick" {
   @font-face {
       font-family:"slick";
-      src:    slick-font-url("../slick-font/slick.eot");
-      src:    slick-font-url("../slick-font/slick.eot?#iefix") format("embedded-opentype"),
-              slick-font-url("../slick-font/slick.woff") format("woff"),
-              slick-font-url("../slick-font/slick.ttf") format("truetype"),
-              slick-font-url("../slick-font/slick.svg#slick") format("svg");
+      src:    slick-font-url("../fonts/slick.eot");
+      src:    slick-font-url("../fonts/slick.eot?#iefix") format("embedded-opentype"),
+              slick-font-url("../fonts/slick.woff") format("woff"),
+              slick-font-url("../fonts/slick.ttf") format("truetype"),
+              slick-font-url("../fonts/slick.svg#slick") format("svg");
       font-weight: normal;
       font-style: normal;
   }
@@ -225,7 +225,7 @@ $opacity-not-active: .25;
 }
 .slick-dots {
     position: absolute;
-    bottom: -45px;
+    bottom: .5em;
     list-style: none;
     display: block;
     text-align: center;
@@ -245,8 +245,8 @@ $opacity-not-active: .25;
             border: 0;
             background: transparent;
             display: block;
-            height: 20px;
-            width: 20px;
+            height: 24px;
+            width: 24px;
             outline: none;
             line-height: 0;
             font-size: 0;
@@ -265,14 +265,14 @@ $opacity-not-active: .25;
                 top: 0;
                 left: 0;
                 content: $slick-dot-character;
-                width: 20px;
-                height: 20px;
+                width: 24px;
+                height: 24px;
                 font-family: $slick-font-family;
                 font-size: $slick-dot-size;
-                line-height: 20px;
+                line-height: 24px;
                 text-align: center;
-                color: $slick-dot-color;
-                opacity: $opacity-not-active;
+                color: #fff;
+                // opacity: $opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
@@ -280,8 +280,8 @@ $opacity-not-active: .25;
         }
 
         &.slick-active button:before {
-            color: $slick-dot-color-active;
-            opacity: $opacity-default;
+            color: $blue;
+            // opacity: $opacity-default;
         }
     }
 }

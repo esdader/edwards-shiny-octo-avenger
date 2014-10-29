@@ -39,9 +39,11 @@ get_header(); ?>
 				$img = get_field('firm_award_image1');
 				$img2 = get_field('firm_award_image2');
 			?>
-			<p>
-				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
-				<img src="<?php echo $img2['url']; ?>" alt="<?php echo $img2['alt']; ?>">
+			<ul class="firm-awards-images">			
+				<li><img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>"></li>
+				<li><img src="<?php echo $img2['url']; ?>" alt="<?php echo $img2['alt']; ?>"></li>
+			</ul>
+			
 		</div>
 		<div class="l-firm-awards-col l-right">
 			<?php the_field('firm_award_main_content'); ?>

@@ -23,7 +23,7 @@ function starter_theme_scripts() {
 		'modernizr', 
 		get_template_directory_uri() . '/js/vendor/modernizr-2.8.2.min.js',
 		array(), // dependencies
-		false,   // version
+		'0.0.1',   // version
 		false    // in footer
 	);
 
@@ -45,7 +45,7 @@ function starter_theme_scripts() {
 		array(
 				'jquery'
 			),
-		false,
+		'0.0.1',
 		true
 
 	);
@@ -58,7 +58,7 @@ function starter_theme_scripts() {
 				'jquery',
 				'plugins'
 			),
-		false,
+		'0.0.1',
 		true
 
 	);
@@ -92,6 +92,12 @@ add_action( 'init', 'register_starter_theme_menus' );
 if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails');
 }
+
+/**
+ * Add html5 form for search
+ */
+
+add_theme_support( 'html5', array( 'search-form' ) );
 
 /**
  * Add image size

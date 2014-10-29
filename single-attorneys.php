@@ -21,7 +21,20 @@ get_header(); ?>
 						the_post_thumbnail( 'atty-lrg' );
 					}
 				?>
-				<a class="attorney-contact-btn" href="#add-link">Contact</a>
+				<?php if ( get_field('attorney_email') )  : ?>
+					<a class="attorney-contact-btn" href="mailto:<?php the_field('attorney_email'); ?>">Contact</a>
+				<?php else : ?>
+					<span class="atty-missing-email">&nbsp;</span>
+				<?php endif; ?>
+
+				<?php if (have_rows('attorney_candids')) : ?>
+					<?php while( have_rows('attorney_candids') ): the_row('attorney_candid_image'); 
+
+						$img = get_sub_field('attorney_candid_image');
+					?>	
+						<img class="attorney-award" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+					<?php endwhile; ?>
+				<?php endif; ?>
 
 				<?php if (have_rows('attorney_awards')) : ?>
 					<?php while( have_rows('attorney_awards') ): the_row('attorney_award_image'); 

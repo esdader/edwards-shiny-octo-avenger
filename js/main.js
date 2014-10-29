@@ -74,7 +74,7 @@
 
         $(document).ready(function(){
             heroCarousel.slick({
-              dots: false,
+              dots: true,
               infinite: true,
               speed: 500,
               fade: true,

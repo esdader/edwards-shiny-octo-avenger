@@ -401,14 +401,14 @@
 	float: left;
 
 	&.l-left {
-		width: per(421, 1070);
+		width: 30%;
 		padding-left: per(18);
 	}
 
 	&.l-right {
-		width: per(580, 1070);
+		width: 69%;
 		padding-left: per(30, 1070);
-		padding-top: 1.5em;
+		// padding-top: 1.5em;
 	}
 }
 

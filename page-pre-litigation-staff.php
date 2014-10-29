@@ -39,7 +39,11 @@ get_header(); ?>
 						$name = get_sub_field('staff_member_name');
 						$email = get_sub_field('staff_member_email');
 					?>
-					<h3><?php echo $name; ?> | <a href="mailto:<?php echo $email; ?>">Contact</a></h3> 
+					<h3><?php echo $name; ?> 
+						<?php if ( get_sub_field('staff_member_phone_number') ) : ?>
+							| <span class="staff-phone"><?php the_sub_field('staff_member_phone_number'); ?></span>
+						<?php endif; ?>
+						| <a href="mailto:<?php echo $email; ?>">Email</a></h3> 
 					<?php the_sub_field('staff_member_bio'); ?>
 				</div>
 			<?php endwhile; ?>

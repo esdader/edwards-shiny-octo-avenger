@@ -10,7 +10,11 @@
 		text-transform: uppercase;
 		color: $blue;
 		letter-spacing: 1px;
-
+		
+		.staff-phone {
+			color: $red;
+		}
+		
 		a {
 			color: $red;
 			text-decoration: none;
