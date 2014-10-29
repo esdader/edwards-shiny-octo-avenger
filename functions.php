@@ -23,7 +23,7 @@ function starter_theme_scripts() {
 		'modernizr', 
 		get_template_directory_uri() . '/js/vendor/modernizr-2.8.2.min.js',
 		array(), // dependencies
-		'0.0.1',   // version
+		'0.0.2',   // version
 		false    // in footer
 	);
 

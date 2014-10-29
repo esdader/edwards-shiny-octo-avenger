@@ -46,7 +46,7 @@
 
 .l-main-header {
 	position: relative;
-	z-index: 100;
+	z-index: 1200;
 	padding: em(27) per(34) em(20) per(32);
 }
 
@@ -58,7 +58,7 @@
 .l-main-nav {
 	position: absolute;
 	top: 100%;
-	z-index: 900;
+	z-index: 1200;
 	margin-left: per(42);
 }
 
