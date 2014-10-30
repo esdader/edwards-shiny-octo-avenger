@@ -116,17 +116,14 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "excerpt",
         "custom_fields",
         "discussion",
         "comments",
         "revisions",
-        "slug",
         "author",
         "format",
         "page_attributes",
-        "categories",
         "tags",
         "send-trackbacks"
     ]

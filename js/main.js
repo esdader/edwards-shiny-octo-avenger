@@ -5,8 +5,24 @@
         caseResltsCloseBtn = $('.result-entry-close-btn'),
         heroCarousel       = $('.l-hero'),
         $mainNav           = $('.main-menu'),
-        $subNav            = $mainNav.find('.menu-item-has-children');
+        $subNav            = $mainNav.find('.menu-item-has-children'),
+        $lightBoxLinks     = $('.test-popup');
 
+
+    // calling placeholder polyfill
+    $('input').placeholder();
+
+    $('.search-form').on('submit', function(e) {
+        var hasValue = true,
+            formValue = $('.search-field').val();
+
+        if ($.trim(formValue).length === 0) {
+            hasValue = false;
+            alert("Please add a search term");
+        }
+
+        return hasValue;
+    });
 
     // $('.l-embed-con').fitVids();
 
@@ -84,6 +100,29 @@
               arrows: false
             });
         });
+    }
+
+
+    function initLightBox() {
+        console.log('holla')
+        $(document).ready(function(){
+            // $('.lightbox').magnificPopup({
+            //     type: 'image',
+            //     mainClass: 'mfp-img-mobile',
+            //     closeOnContentClick: true,
+            //     image: {
+            //         verticalFit: true
+            //     }
+            // });
+            $('.test-popup').magnificPopup({ 
+              type: 'image'
+                // other options
+            });
+        });
+    }
+
+    if ($lightBoxLinks.length > 0) {
+        initLightBox();
     }
 
 }) (jQuery, window);

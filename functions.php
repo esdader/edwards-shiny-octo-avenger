@@ -23,7 +23,7 @@ function starter_theme_scripts() {
 		'modernizr', 
 		get_template_directory_uri() . '/js/vendor/modernizr-2.8.2.min.js',
 		array(), // dependencies
-		'0.0.2',   // version
+		'0.0.3',   // version
 		false    // in footer
 	);
 
@@ -45,7 +45,7 @@ function starter_theme_scripts() {
 		array(
 				'jquery'
 			),
-		'0.0.1',
+		'0.0.2',
 		true
 
 	);
@@ -58,7 +58,7 @@ function starter_theme_scripts() {
 				'jquery',
 				'plugins'
 			),
-		'0.0.1',
+		'0.0.2',
 		true
 
 	);

@@ -33,7 +33,7 @@
             "disabled": 0
         },
         {
-            "key": "field_544eac88a2742",
+            "key": "field_544eb0194ff36",
             "label": "Show Practice Areas",
             "name": "show_practice_areas",
             "prefix": "",
@@ -313,12 +313,10 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "custom_fields",
         "discussion",
         "comments",
         "revisions",
-        "slug",
         "author",
         "format",
         "page_attributes",

@@ -8,5 +8,26 @@
 
 .atty-missing-email {
 	display: block;
-	height: 2em;
+	height: 5px;
+}
+
+.l-candids {
+	width: 100%;
+	text-align: left;
+}
+
+.l-attorney-secondary .candid-image {
+	max-width: 49%;
+	height: auto;
+	margin: 5px 0 0;
+	vertical-align: top;
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+	}
+
 }

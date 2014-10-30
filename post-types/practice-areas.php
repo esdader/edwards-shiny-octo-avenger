@@ -9,9 +9,7 @@ function practice_areas_init() {
 		'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		'has_archive'       => false,
 		'query_var'         => true,
-		'rewrite'           => array(
-									'slug' => 'practice-areas'
-			                	),
+		'rewrite'           => true,
 		'labels'            => array(
 			'name'                => __( 'Practice areas', 'edwardslawfirm' ),
 			'singular_name'       => __( 'Practice area', 'edwardslawfirm' ),

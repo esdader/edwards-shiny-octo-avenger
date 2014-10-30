@@ -28,12 +28,20 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<?php if (have_rows('attorney_candids')) : ?>
-					<?php while( have_rows('attorney_candids') ): the_row('attorney_candid_image'); 
-
-						$img = get_sub_field('attorney_candid_image');
-					?>	
-						<img class="attorney-award" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
-					<?php endwhile; ?>
+					<div class="l-candids clearfix">
+						<?php $i = 1; ?>
+						<?php while( have_rows('attorney_candids') ): the_row('attorney_candid_image'); 
+							if (($i % 2) == 0) {
+								$class = ' right';
+							} else {
+								$class = ' left';
+							}
+							$img = get_sub_field('attorney_candid_image');
+						?>	
+							<a href="<?php echo $img['url']; ?>" class="test-popup"><img class="attorney-award candid-image<?php echo $class; ?>" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>"></a>
+							<?php $i++; ?>
+						<?php endwhile; ?>
+					</div>
 				<?php endif; ?>
 
 				<?php if (have_rows('attorney_awards')) : ?>

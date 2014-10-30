@@ -7,7 +7,7 @@
 	line-height: 23px;
 	border: 1px solid #ccc;
 	box-shadow: 1px 1px 3px #ccc;
-	padding-left: 3px;
+	padding: 0 0 0 3px;
 
 }
 
@@ -40,30 +40,13 @@ input[type="search"] {
 }
 
 .search-submit {
-	position: relative;
-	width: 28px;
-	line-height: 21px;
-	background: $red;
-	font-size: 0;
-	color: $red;
-	display: inline-block;
-	vertical-align: top;
+	padding: 0;
+	margin: 0;
 	border: none;
+	outline: none;
+	background: none;
+	vertical-align: top;
 
-	&:before {
-		content: " ";
-		position: absolute;
-		width: 0; 
-		height: 0; 
-		left: 8px;
-		top: 6px;
-		line-height: 21px;
-		font-size: 21px;
-		border-top: 8px solid transparent;
-		border-bottom: 8px solid transparent;
-		
-		border-left: 14px solid #fff;
-	}
 }
 
 .l-search {
@@ -87,7 +70,7 @@ input[type="search"] {
 	a:hover,
 	a:visited {
 		color: #004e72;
-		font-size: 1.875em;
+		font-size: 1em;
 		line-height: 1.1;
 		color: #004e72;
 		text-decoration: none;
