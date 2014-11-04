@@ -31,7 +31,7 @@ get_header(); ?>
 				$toll_free = get_field('toll_free_number', 'option');
 			?>
 			<?php the_field('addy_1', 'option'); ?>, <?php the_field('addy_2', 'option'); ?> 
-			<br><?php the_field('city', 'option'); ?>, <?php the_field('state', 'option'); ?> <?php the_field('zip', 'option');?>
+			<br><?php the_field('city', 'option'); ?>, <?php the_field('state', 'option'); ?> <?php the_field('zip_code', 'option');?>
 			<br>Phone: <?php the_field('phone', 'option'); ?>
 			<br>Toll Free: <?php the_field('toll_free_number', 'option'); ?>
 			<br>Fax: <?php the_field('fax', 'option'); ?>

@@ -55,11 +55,30 @@
 	text-align: right;
 }
 
-.l-main-nav {
+.l-nav-search-con {
+	width: 100%;
 	position: absolute;
 	top: 100%;
 	z-index: 1200;
-	margin-left: per(42);
+}
+
+.l-main-nav {
+	// position: absolute;
+	// top: 100%;
+	// z-index: 1200;
+	float: left;
+	padding-left: per(42);
+}
+
+.l-search {
+	// position: absolute;
+	// right: 87px;
+	// top: 100%;
+	float: left;
+	// width: per(160);
+	text-align: left;
+	padding-top: 1em;
+	padding-left: .5em;
 }
 
 .menu-item-has-children {
@@ -104,7 +123,7 @@
 
 .menu-item-171 {
 	& > .sub-menu {
-		width: 345px;
+		width: 375px;
 	}
 }
 

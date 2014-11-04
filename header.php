@@ -6,9 +6,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=1200">
     <script type="text/javascript">
 		WebFontConfig = {
 			google: { families: [ 'Fredoka+One::latin' ] }
@@ -60,23 +59,25 @@
 		</div>
 		<div class="l-language-toggle">
 			<p class="language-toggle">
-				<!-- <a href="<?php echo get_site_url(); ?>">English</a>
+				<a href="<?php echo get_site_url(); ?>">English</a>
 				<span class="divider"> | </span>
-				<a href="<?php echo get_page_link(); ?>">Spanish</a> -->
+				<a href="<?php echo get_page_link(); ?>">Spanish</a>
 		</div>
-		<nav class="l-main-nav clearfix" role="navigation">
-			<?php 
-				$params = array(
-				    'theme_location' => 'header-menu',
-				    'container' => false,
-				    'menu_class' => 'l-horizontal-list main-menu'
-				);
+		<div class="l-nav-search-con">
+			<nav class="l-main-nav clearfix" role="navigation">
+				<?php 
+					$params = array(
+					    'theme_location' => 'header-menu',
+					    'container' => false,
+					    'menu_class' => 'l-horizontal-list main-menu'
+					);
 
-				wp_nav_menu($params);
-			?>
-		</nav>
-		<div class="l-search">
-			<?php get_search_form(); ?>
+					wp_nav_menu($params);
+				?>
+			</nav>
+			<div class="l-search">
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 	</header>
 </div>

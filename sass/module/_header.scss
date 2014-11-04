@@ -27,7 +27,7 @@
  	width: 36px;
  	height: 28px;
  	margin-left: per(40);
- 	background: url(../img/s.png) no-repeat 0 -90px;
+ 	background: url(../img/s1.png) no-repeat 0 -90px;
  }
 
  .header-social-media-links {
@@ -50,11 +50,11 @@
  	display: block;
  	width: 36px;
  	height: 36px;
- 	background-image: url(../img/s.svg);
+ 	background-image: url(../img/s1.svg);
 	background-repeat: no-repeat;
 
  	.no-svg & {
- 		background-image: url(../img/s.png);
+ 		background-image: url(../img/s1.png);
 
  	}
  	
