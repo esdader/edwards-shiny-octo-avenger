@@ -7,7 +7,8 @@
 function starter_theme_scripts() {
 
 	// set dev or production mode
-	$mode = 'production';
+	$mode = 'dev';
+	// $mode = 'production';
 
 	// google fonts
 	// wp_enqueue_style( 
@@ -20,7 +21,7 @@ function starter_theme_scripts() {
 		'main', 
 		get_template_directory_uri() . '/css/main.css',
 		array(),
-		'1.0.0'
+		'1.0.1'
 	);
 	
 	// modernizr
