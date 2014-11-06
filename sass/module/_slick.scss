@@ -112,6 +112,8 @@ $opacity-not-active: .25;
     }
     img {
         display: block;
+        width: 100%;
+        height: auto;
     }
     &.slick-loading img {
         display: none;

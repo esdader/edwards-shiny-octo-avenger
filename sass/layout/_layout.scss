@@ -34,7 +34,6 @@
 
 .l-inner {
 	max-width: $max-px-width;
-	width: $max-px-width;
 	margin: 0 auto;
 }
 
@@ -68,6 +67,12 @@
 	// z-index: 1200;
 	float: left;
 	padding-left: per(42);
+}
+
+@media (max-width: 1150px) {
+	.l-main-nav {
+		padding-left: 0;
+	}
 }
 
 .l-search {
@@ -185,7 +190,6 @@
 
 .l-hero {
 	max-width: $max-px-width;
-	width: $max-px-width;
 	margin: 0 auto;
 }
 
