@@ -5,6 +5,10 @@
 .entry-content {
 	h1 {
 		@extend .heading-main;
+
+		@media (max-width: 380px) {
+			font-size: 26px;
+		}
 	}
 
 	h2,
@@ -17,6 +21,9 @@
 
 	.large-text {
 		font-size: em(22, 18);
+		@media (max-width: 380px) {
+			font-size: 1em;
+		}
 	}
 
 	p,
@@ -35,7 +42,8 @@
 		@extend .inline-list;
 
 		li {
-			line-height: 2.25;
+			line-height: 1.4;
+			margin-bottom: .75em;
 		}
 	}
 }
@@ -45,6 +53,18 @@
 	padding: .75em 0 em(30) per(30);
 	max-width: 100%;
 	height: auto;
+
+	@media (max-width: $single-col) {
+		float: none;
+		display: block;
+		margin: 0 auto 2em;
+		padding: 0;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
 }
 
 

@@ -38,3 +38,11 @@
 		line-height: (20 / 14);
 	}
 }
+
+@media (max-width: $single-col) {
+	.firm-awards-images {
+		li {
+			text-align: center;
+		}
+	}
+}

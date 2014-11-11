@@ -30,6 +30,10 @@
 	li {
 		padding-left: 15px;
 
+		@media (max-width: $single-col) {
+			padding-left: 0;
+		}
+
 		&:before {
 			display: inline-block;
 			width: 7px;
@@ -38,6 +42,8 @@
 			background-color: $blue;
 			content: " ";
 			margin-right: em(8);
+
+
 		}
 	}
 	a {
@@ -65,11 +71,11 @@
  	display: block;
  	width: 36px;
  	height: 36px;
- 	background-image: url(../img/s1.svg);
+ 	background-image: url(../img/sprite.svg);
 	background-repeat: no-repeat;
 
  	.no-svg & {
- 		background-image: url(../img/s1.png);
+ 		background-image: url(../img/sprite.png);
 
  	}
  	

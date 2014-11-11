@@ -1,0 +1,28 @@
+/**
+ * Site helpers
+ */
+
+
+// utils for hiding / showing elements
+
+.small-view {
+	display: none;
+}
+
+.small-view-inline {
+	display: none;
+}
+
+@media (max-width: $floor) {
+	.small-view {
+		display: block;
+	}
+
+	.small-view-inline {
+		display: inline;
+	}
+
+	.big-view {
+		display: none;
+	}
+}

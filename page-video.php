@@ -14,7 +14,15 @@ get_header(); ?>
 		<?php if ( have_rows('videos') ) : ?>
 		<ul class="l-video-grid l-horizontal-list clearfix">
 			<?php while ( have_rows('videos') ) : the_row(); ?>
-				<li class="l-embed-con">
+				<?php 
+					$override = get_sub_field('aspect_ratio_override'); 
+					if ($override === true) {
+						$class = ' override-aspect-ratio';
+					} else {
+						$class = '';
+					}
+				?>
+				<li class="l-embed-con<?php echo $class; ?>">
 					<?php the_sub_field('video'); ?>
 				</li>
 			<?php endwhile; ?>

@@ -7,8 +7,8 @@
 function starter_theme_scripts() {
 
 	// set dev or production mode
-	$mode = 'dev';
-	// $mode = 'production';
+	// $mode = 'dev';
+	$mode = 'production';
 
 	// google fonts
 	// wp_enqueue_style( 
@@ -21,7 +21,7 @@ function starter_theme_scripts() {
 		'main', 
 		get_template_directory_uri() . '/css/main.css',
 		array(),
-		'1.0.1'
+		'1.0.5'
 	);
 	
 	// modernizr
@@ -54,7 +54,7 @@ function starter_theme_scripts() {
 			array(
 					'jquery'
 				),
-			'0.0.2',
+			'0.0.4',
 			true
 
 		);
@@ -67,7 +67,7 @@ function starter_theme_scripts() {
 					'jquery',
 					'plugins'
 				),
-			'0.0.2',
+			'0.0.4',
 			true
 
 		);
@@ -80,7 +80,7 @@ function starter_theme_scripts() {
 			array(
 					'jquery'
 				),
-			'1.0.0',
+			'1.0.1',
 			true
 
 		);

@@ -79,7 +79,7 @@ get_header(); ?>
 			<?php if ( $attys->have_posts() ) : while ( $attys->have_posts() ) : $attys->the_post(); ?>
 				<li>
 					<?php if ( has_post_thumbnail() ) : ?>
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('atty_med'); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
 					<?php endif; ?>
 					<h4 class="attorney-name">
 						<?php the_title(); ?>

@@ -36,28 +36,37 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="l-outer l-main-header-outer">
-	<header class="l-main-header l-inner" role="banner">
-		<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('template_directory'); ?>/img/logo.png'" alt="The Edwards Law Firm"></a>
-		<?php 
-			$phone     = get_field('phone', 'option');
-			$toll_free = get_field('toll_free_number', 'option');
-		?>
-		<div class="header-phone"><a href="tel:<?php echo strip_dashes_from_number($phone); ?>"><?php echo $phone; ?></a> / <a href="tel:<?php echo strip_dashes_from_number($toll_free); ?>"><?php echo $toll_free; ?></a></div>
-		<a href="mailto:<?php the_field('email', 'option'); ?>" class="icon-header-contact ir">Contact</a>
-		<div class="header-social-media-links">
-			<ul class="l-horizontal-list header-social-media-list">
-				<li>
-					<a href="<?php the_field('facebook', 'option'); ?>" class="header-social-media-link header-facebook ir">Facebook</a>
-				</li>
-				<li>
-					<a href="<?php the_field('twitter', 'option'); ?>" class="header-social-media-link header-twitter ir">Twitter</a>
-				</li>
-				<li>
-					<a href="<?php the_field('google+', 'option'); ?>" class="header-social-media-link header-google-plus ir">Google+</a>
-				</li>
-			</ul>
+	<header class="l-main-header l-inner clearfix" role="banner">
+		<div class="l-logo-phone-con">
+			<span class="l-logo-menu">
+			<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('template_directory'); ?>/img/logo.png'" alt="The Edwards Law Firm"></a>
+			<button class="menu-toggle-btn small-view"><img src="<?php bloginfo('template_directory'); ?>/img/ham.png" alt="Menu button"></button>
+			</span>
+			<?php 
+				$phone     = get_field('phone', 'option');
+				$toll_free = get_field('toll_free_number', 'option');
+			?>
+			<span class="phone-email">
+			<div class="header-phone big-view"><a href="tel:<?php echo strip_dashes_from_number($phone); ?>"><?php echo $phone; ?></a> / <a href="tel:<?php echo strip_dashes_from_number($toll_free); ?>"><?php echo $toll_free; ?></a></div>
+			</span>
 		</div>
-		<div class="l-language-toggle">
+		<div class="l-contact-social-con big-view">
+			<a href="mailto:<?php the_field('email', 'option'); ?>" class="icon-header-contact big-view ir">Contact</a>
+			<div class="header-social-media-links">
+				<ul class="l-horizontal-list header-social-media-list">
+					<li>
+						<a href="<?php the_field('facebook', 'option'); ?>" class="header-social-media-link header-facebook ir">Facebook</a>
+					</li>
+					<li>
+						<a href="<?php the_field('twitter', 'option'); ?>" class="header-social-media-link header-twitter ir">Twitter</a>
+					</li>
+					<li>
+						<a href="<?php the_field('google+', 'option'); ?>" class="header-social-media-link header-google-plus ir">Google+</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="l-language-toggle big-view">
 			<p class="language-toggle">
 				<a href="<?php echo get_site_url(); ?>">English</a>
 				<span class="divider"> | </span>
@@ -80,4 +89,8 @@
 			</div>
 		</div>
 	</header>
+</div>
+<div class="l-contact-header clearfix small-view">
+	<div class="header-phone"><a href="tel:<?php echo strip_dashes_from_number($phone); ?>"><?php echo $phone; ?></a> / <a href="tel:<?php echo strip_dashes_from_number($toll_free); ?>"><?php echo $toll_free; ?></a></div>
+	<a href="mailto:<?php the_field('email', 'option'); ?>" class="icon-header-contact ir">Contact</a>
 </div>

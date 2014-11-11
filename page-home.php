@@ -17,11 +17,14 @@ get_header(); ?>
 							<?php the_sub_field('homepage_carousel_copy_line_one'); ?>
 							 <span><?php the_sub_field('homepage_carousel_copy_line_two'); ?></span>
 						</h2>
-						<a class="cta-how-help-btn" href="<?php echo site_url(); ?>/contact/">How Can We Help?</a>
+						<a class="cta-how-help-btn show-big" href="<?php echo site_url(); ?>/contact/">How Can We Help?</a>
 					</div>
 				</div>
 			<?php endwhile; ?>
 		</div>
+	</div>
+	<div class="l-mobile-hero-cta small-view">
+		<a class="cta-how-help-btn" href="<?php echo site_url(); ?>/contact/">How Can We Help?</a>
 	</div>
 <?php endif; ?>
 <div class="l-home-intro-con.l-outer">

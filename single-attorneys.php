@@ -12,10 +12,7 @@ get_header(); ?>
 			<header>
 				<h1><?php the_title(); ?></h1>
 			</header>
-			<section class="l-attorney-page-col l-attorney-main">
-				<?php the_content(); ?>
-			</section>
-			<section class="l-attorney-page-col l-attorney-secondary">
+			<div class="l-atty-main-image">
 				<?php 
 					if ( has_post_thumbnail() ) { 
 						the_post_thumbnail( 'atty-lrg' );
@@ -26,7 +23,11 @@ get_header(); ?>
 				<?php else : ?>
 					<span class="atty-missing-email">&nbsp;</span>
 				<?php endif; ?>
-
+			</div>
+			<section class="l-attorney-page-col l-attorney-main">
+				<?php the_content(); ?>
+			</section>
+			<section class="l-attorney-page-col l-attorney-secondary">
 				<?php if (have_rows('attorney_candids')) : ?>
 					<div class="l-candids clearfix">
 						<?php $i = 1; ?>
